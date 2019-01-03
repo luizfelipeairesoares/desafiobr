@@ -1,5 +1,4 @@
 # luiz-soares
-# barbara-silveira
 IOS Esportes
 
 **Globo.com: coding challenge**
