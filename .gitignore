@@ -109,4 +109,10 @@ iOSInjectionProject/
 /*.gcno
 **/xcshareddata/WorkspaceSettings.xcsettings
 
-# End of https://www.gitignore.io/api/xcode,swift,cocoapods
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# End of https://www.gitignore.io/api/xcode,swift,cocoapods,macOS
