@@ -1,0 +1,23 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '11.0'
+
+target 'brasileirao-luizsoares' do
+  # Comment the next line if you're not using Swift and don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for brasileirao-luizsoares
+
+  pod 'Moya', '~> 12.0'
+  pod 'NVActivityIndicatorView', '~> 4.4.1'
+
+  target 'brasileirao-luizsoaresTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'brasileirao-luizsoaresUITests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+end

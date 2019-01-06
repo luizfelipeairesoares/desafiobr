@@ -18,6 +18,17 @@
 		559C936B21E299E8008E6E17 /* BaseTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936A21E299E8008E6E17 /* BaseTableViewCellProtocol.swift */; };
 		559C936D21E29D05008E6E17 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936C21E29D05008E6E17 /* ListViewModel.swift */; };
 		559C936F21E29D19008E6E17 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936E21E29D19008E6E17 /* ControllerProtocol.swift */; };
+		559C937121E2AC3C008E6E17 /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C937021E2AC3C008E6E17 /* BaseService.swift */; };
+		559C937321E2AC7C008E6E17 /* BrasileiraoAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C937221E2AC7C008E6E17 /* BrasileiraoAPI.swift */; };
+		559C937621E2ADDB008E6E17 /* GamesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C937521E2ADDB008E6E17 /* GamesService.swift */; };
+		559C937921E2AE74008E6E17 /* APIResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C937821E2AE74008E6E17 /* APIResult.swift */; };
+		559C937D21E2AEFF008E6E17 /* RoundEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C937C21E2AEFF008E6E17 /* RoundEntity.swift */; };
+		559C937F21E2B1E2008E6E17 /* APIErrors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C937E21E2B1E2008E6E17 /* APIErrors.swift */; };
+		559C938121E2B361008E6E17 /* APICodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C938021E2B361008E6E17 /* APICodable.swift */; };
+		559C938321E2B5F6008E6E17 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C938221E2B5F6008E6E17 /* Response.swift */; };
+		67293B98E60F388119A0F349 /* Pods_brasileirao_luizsoaresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 723BFE7AC87B4D8C391B0230 /* Pods_brasileirao_luizsoaresTests.framework */; };
+		B654580A4DEED3C4E7FA6BF7 /* Pods_brasileirao_luizsoares.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F46BCB3E70DA168106DB1D9 /* Pods_brasileirao_luizsoares.framework */; };
+		C0A6731ABA537ECC13C1F1FF /* Pods_brasileirao_luizsoaresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 071AEB0CB3264F2A1EDA69E0 /* Pods_brasileirao_luizsoaresUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +49,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		071AEB0CB3264F2A1EDA69E0 /* Pods_brasileirao_luizsoaresUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoaresUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		356147B650901F26AF481C98 /* Pods-brasileirao-luizsoaresTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresTests/Pods-brasileirao-luizsoaresTests.debug.xcconfig"; sourceTree = "<group>"; };
 		554780D421E13265007F131C /* brasileirao-luizsoares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "brasileirao-luizsoares.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554780D721E13265007F131C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		554780DE21E13266007F131C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -55,6 +68,21 @@
 		559C936A21E299E8008E6E17 /* BaseTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCellProtocol.swift; sourceTree = "<group>"; };
 		559C936C21E29D05008E6E17 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
 		559C936E21E29D19008E6E17 /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
+		559C937021E2AC3C008E6E17 /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		559C937221E2AC7C008E6E17 /* BrasileiraoAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoAPI.swift; sourceTree = "<group>"; };
+		559C937521E2ADDB008E6E17 /* GamesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesService.swift; sourceTree = "<group>"; };
+		559C937821E2AE74008E6E17 /* APIResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIResult.swift; sourceTree = "<group>"; };
+		559C937C21E2AEFF008E6E17 /* RoundEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundEntity.swift; sourceTree = "<group>"; };
+		559C937E21E2B1E2008E6E17 /* APIErrors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIErrors.swift; sourceTree = "<group>"; };
+		559C938021E2B361008E6E17 /* APICodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICodable.swift; sourceTree = "<group>"; };
+		559C938221E2B5F6008E6E17 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		5FB9A64785612AD3325218E9 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresUITests/Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		652277E182D7A579A3E819ED /* Pods-brasileirao-luizsoares.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoares.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoares/Pods-brasileirao-luizsoares.release.xcconfig"; sourceTree = "<group>"; };
+		7236AD62A27F6A6F73FF3CDA /* Pods-brasileirao-luizsoaresUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresUITests/Pods-brasileirao-luizsoaresUITests.release.xcconfig"; sourceTree = "<group>"; };
+		723BFE7AC87B4D8C391B0230 /* Pods_brasileirao_luizsoaresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoaresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7F46BCB3E70DA168106DB1D9 /* Pods_brasileirao_luizsoares.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoares.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		80D91064915C4F65DDFC6A95 /* Pods-brasileirao-luizsoares.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoares.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoares/Pods-brasileirao-luizsoares.debug.xcconfig"; sourceTree = "<group>"; };
+		D6A27D677C69A1DE59262DC5 /* Pods-brasileirao-luizsoaresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresTests/Pods-brasileirao-luizsoaresTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B654580A4DEED3C4E7FA6BF7 /* Pods_brasileirao_luizsoares.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,6 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				67293B98E60F388119A0F349 /* Pods_brasileirao_luizsoaresTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,12 +106,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0A6731ABA537ECC13C1F1FF /* Pods_brasileirao_luizsoaresUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		35F080B519272BBB89BB2A5F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				80D91064915C4F65DDFC6A95 /* Pods-brasileirao-luizsoares.debug.xcconfig */,
+				652277E182D7A579A3E819ED /* Pods-brasileirao-luizsoares.release.xcconfig */,
+				356147B650901F26AF481C98 /* Pods-brasileirao-luizsoaresTests.debug.xcconfig */,
+				D6A27D677C69A1DE59262DC5 /* Pods-brasileirao-luizsoaresTests.release.xcconfig */,
+				5FB9A64785612AD3325218E9 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */,
+				7236AD62A27F6A6F73FF3CDA /* Pods-brasileirao-luizsoaresUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		554780CB21E13265007F131C = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +133,8 @@
 				554780EB21E13266007F131C /* brasileirao-luizsoaresTests */,
 				554780F621E13266007F131C /* brasileirao-luizsoaresUITests */,
 				554780D521E13265007F131C /* Products */,
+				35F080B519272BBB89BB2A5F /* Pods */,
+				69BC0CCE5DFB492C23A01395 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +154,7 @@
 				554780D721E13265007F131C /* AppDelegate.swift */,
 				5547810521E13275007F131C /* Controllers */,
 				5547810621E1327A007F131C /* Views */,
+				559C937A21E2AEEA008E6E17 /* Models */,
 				5547810921E1329A007F131C /* Services */,
 				5547810721E13283007F131C /* Resources */,
 				5547810A21E1329E007F131C /* Utils */,
@@ -170,6 +217,10 @@
 		5547810921E1329A007F131C /* Services */ = {
 			isa = PBXGroup;
 			children = (
+				559C937721E2AE5E008E6E17 /* Utils */,
+				559C937421E2ADD0008E6E17 /* GamesService */,
+				559C937021E2AC3C008E6E17 /* BaseService.swift */,
+				559C937221E2AC7C008E6E17 /* BrasileiraoAPI.swift */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -229,8 +280,53 @@
 			children = (
 				559C936A21E299E8008E6E17 /* BaseTableViewCellProtocol.swift */,
 				559C936E21E29D19008E6E17 /* ControllerProtocol.swift */,
+				559C938021E2B361008E6E17 /* APICodable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		559C937421E2ADD0008E6E17 /* GamesService */ = {
+			isa = PBXGroup;
+			children = (
+				559C937521E2ADDB008E6E17 /* GamesService.swift */,
+			);
+			path = GamesService;
+			sourceTree = "<group>";
+		};
+		559C937721E2AE5E008E6E17 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				559C937821E2AE74008E6E17 /* APIResult.swift */,
+				559C937E21E2B1E2008E6E17 /* APIErrors.swift */,
+				559C938221E2B5F6008E6E17 /* Response.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		559C937A21E2AEEA008E6E17 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				559C937B21E2AEF3008E6E17 /* Round */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		559C937B21E2AEF3008E6E17 /* Round */ = {
+			isa = PBXGroup;
+			children = (
+				559C937C21E2AEFF008E6E17 /* RoundEntity.swift */,
+			);
+			path = Round;
+			sourceTree = "<group>";
+		};
+		69BC0CCE5DFB492C23A01395 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7F46BCB3E70DA168106DB1D9 /* Pods_brasileirao_luizsoares.framework */,
+				723BFE7AC87B4D8C391B0230 /* Pods_brasileirao_luizsoaresTests.framework */,
+				071AEB0CB3264F2A1EDA69E0 /* Pods_brasileirao_luizsoaresUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -240,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554780FC21E13266007F131C /* Build configuration list for PBXNativeTarget "brasileirao-luizsoares" */;
 			buildPhases = (
+				40698C21843E8D97B3FAFFBB /* [CP] Check Pods Manifest.lock */,
 				554780D021E13265007F131C /* Sources */,
 				554780D121E13265007F131C /* Frameworks */,
 				554780D221E13265007F131C /* Resources */,
+				9D66E68267C5CA2B2A7B2DDA /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -257,6 +355,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 554780FF21E13266007F131C /* Build configuration list for PBXNativeTarget "brasileirao-luizsoaresTests" */;
 			buildPhases = (
+				26250F14FD7A0A44581B8441 /* [CP] Check Pods Manifest.lock */,
 				554780E421E13266007F131C /* Sources */,
 				554780E521E13266007F131C /* Frameworks */,
 				554780E621E13266007F131C /* Resources */,
@@ -275,6 +374,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5547810221E13266007F131C /* Build configuration list for PBXNativeTarget "brasileirao-luizsoaresUITests" */;
 			buildPhases = (
+				44386EF56A3C28F8B495A77F /* [CP] Check Pods Manifest.lock */,
 				554780EF21E13266007F131C /* Sources */,
 				554780F021E13266007F131C /* Frameworks */,
 				554780F121E13266007F131C /* Resources */,
@@ -359,16 +459,121 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		26250F14FD7A0A44581B8441 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-brasileirao-luizsoaresTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		40698C21843E8D97B3FAFFBB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-brasileirao-luizsoares-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		44386EF56A3C28F8B495A77F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-brasileirao-luizsoaresUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9D66E68267C5CA2B2A7B2DDA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-brasileirao-luizsoares/Pods-brasileirao-luizsoares-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/NVActivityIndicatorView/NVActivityIndicatorView.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/NVActivityIndicatorView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-brasileirao-luizsoares/Pods-brasileirao-luizsoares-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		554780D021E13265007F131C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				559C936D21E29D05008E6E17 /* ListViewModel.swift in Sources */,
+				559C937921E2AE74008E6E17 /* APIResult.swift in Sources */,
 				559C936F21E29D19008E6E17 /* ControllerProtocol.swift in Sources */,
+				559C937D21E2AEFF008E6E17 /* RoundEntity.swift in Sources */,
 				559C936321E298E0008E6E17 /* ListViewController.swift in Sources */,
+				559C937F21E2B1E2008E6E17 /* APIErrors.swift in Sources */,
+				559C938321E2B5F6008E6E17 /* Response.swift in Sources */,
+				559C937621E2ADDB008E6E17 /* GamesService.swift in Sources */,
 				554780D821E13265007F131C /* AppDelegate.swift in Sources */,
+				559C937121E2AC3C008E6E17 /* BaseService.swift in Sources */,
+				559C938121E2B361008E6E17 /* APICodable.swift in Sources */,
 				559C936B21E299E8008E6E17 /* BaseTableViewCellProtocol.swift in Sources */,
+				559C937321E2AC7C008E6E17 /* BrasileiraoAPI.swift in Sources */,
 				559C936821E29970008E6E17 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -523,11 +728,13 @@
 		};
 		554780FD21E13266007F131C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 80D91064915C4F65DDFC6A95 /* Pods-brasileirao-luizsoares.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WMKD356T27;
 				INFOPLIST_FILE = "$(SRCROOT)/brasileirao-luizsoares/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -541,11 +748,13 @@
 		};
 		554780FE21E13266007F131C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 652277E182D7A579A3E819ED /* Pods-brasileirao-luizsoares.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = WMKD356T27;
 				INFOPLIST_FILE = "$(SRCROOT)/brasileirao-luizsoares/SupportingFiles/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -559,6 +768,7 @@
 		};
 		5547810021E13266007F131C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 356147B650901F26AF481C98 /* Pods-brasileirao-luizsoaresTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -580,6 +790,7 @@
 		};
 		5547810121E13266007F131C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D6A27D677C69A1DE59262DC5 /* Pods-brasileirao-luizsoaresTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -601,6 +812,7 @@
 		};
 		5547810321E13266007F131C /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5FB9A64785612AD3325218E9 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -621,6 +833,7 @@
 		};
 		5547810421E13266007F131C /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7236AD62A27F6A6F73FF3CDA /* Pods-brasileirao-luizsoaresUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
