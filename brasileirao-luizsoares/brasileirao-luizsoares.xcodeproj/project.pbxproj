@@ -8,11 +8,16 @@
 
 /* Begin PBXBuildFile section */
 		554780D821E13265007F131C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554780D721E13265007F131C /* AppDelegate.swift */; };
-		554780DD21E13265007F131C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554780DB21E13265007F131C /* Main.storyboard */; };
 		554780DF21E13266007F131C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 554780DE21E13266007F131C /* Assets.xcassets */; };
-		554780E221E13266007F131C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 554780E021E13266007F131C /* LaunchScreen.storyboard */; };
 		554780ED21E13266007F131C /* brasileirao_luizsoaresTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554780EC21E13266007F131C /* brasileirao_luizsoaresTests.swift */; };
 		554780F821E13266007F131C /* brasileirao_luizsoaresUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 554780F721E13266007F131C /* brasileirao_luizsoaresUITests.swift */; };
+		556129EA21E14E6800ACC56C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556129E821E14E6800ACC56C /* Main.storyboard */; };
+		556129EB21E14E6800ACC56C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 556129E921E14E6800ACC56C /* LaunchScreen.storyboard */; };
+		559C936321E298E0008E6E17 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936221E298E0008E6E17 /* ListViewController.swift */; };
+		559C936821E29970008E6E17 /* ListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936721E29970008E6E17 /* ListTableViewCell.swift */; };
+		559C936B21E299E8008E6E17 /* BaseTableViewCellProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936A21E299E8008E6E17 /* BaseTableViewCellProtocol.swift */; };
+		559C936D21E29D05008E6E17 /* ListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936C21E29D05008E6E17 /* ListViewModel.swift */; };
+		559C936F21E29D19008E6E17 /* ControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C936E21E29D19008E6E17 /* ControllerProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,9 +40,7 @@
 /* Begin PBXFileReference section */
 		554780D421E13265007F131C /* brasileirao-luizsoares.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "brasileirao-luizsoares.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554780D721E13265007F131C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		554780DC21E13265007F131C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		554780DE21E13266007F131C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		554780E121E13266007F131C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		554780E321E13266007F131C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		554780E821E13266007F131C /* brasileirao-luizsoaresTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "brasileirao-luizsoaresTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554780EC21E13266007F131C /* brasileirao_luizsoaresTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brasileirao_luizsoaresTests.swift; sourceTree = "<group>"; };
@@ -45,6 +48,13 @@
 		554780F321E13266007F131C /* brasileirao-luizsoaresUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "brasileirao-luizsoaresUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		554780F721E13266007F131C /* brasileirao_luizsoaresUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = brasileirao_luizsoaresUITests.swift; sourceTree = "<group>"; };
 		554780F921E13266007F131C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		556129E821E14E6800ACC56C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		556129E921E14E6800ACC56C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		559C936221E298E0008E6E17 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		559C936721E29970008E6E17 /* ListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListTableViewCell.swift; sourceTree = "<group>"; };
+		559C936A21E299E8008E6E17 /* BaseTableViewCellProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewCellProtocol.swift; sourceTree = "<group>"; };
+		559C936C21E29D05008E6E17 /* ListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModel.swift; sourceTree = "<group>"; };
+		559C936E21E29D19008E6E17 /* ControllerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -167,6 +177,7 @@
 		5547810A21E1329E007F131C /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				559C936921E299D7008E6E17 /* Protocols */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -174,6 +185,9 @@
 		5547810B21E132B9007F131C /* List */ = {
 			isa = PBXGroup;
 			children = (
+				559C936621E2995E008E6E17 /* Auxiliar Views */,
+				559C936221E298E0008E6E17 /* ListViewController.swift */,
+				559C936C21E29D05008E6E17 /* ListViewModel.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -196,10 +210,27 @@
 		5547810E21E132D7007F131C /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				554780DB21E13265007F131C /* Main.storyboard */,
-				554780E021E13266007F131C /* LaunchScreen.storyboard */,
+				556129E921E14E6800ACC56C /* LaunchScreen.storyboard */,
+				556129E821E14E6800ACC56C /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		559C936621E2995E008E6E17 /* Auxiliar Views */ = {
+			isa = PBXGroup;
+			children = (
+				559C936721E29970008E6E17 /* ListTableViewCell.swift */,
+			);
+			path = "Auxiliar Views";
+			sourceTree = "<group>";
+		};
+		559C936921E299D7008E6E17 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				559C936A21E299E8008E6E17 /* BaseTableViewCellProtocol.swift */,
+				559C936E21E29D19008E6E17 /* ControllerProtocol.swift */,
+			);
+			path = Protocols;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,9 +337,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				554780E221E13266007F131C /* LaunchScreen.storyboard in Resources */,
+				556129EB21E14E6800ACC56C /* LaunchScreen.storyboard in Resources */,
 				554780DF21E13266007F131C /* Assets.xcassets in Resources */,
-				554780DD21E13265007F131C /* Main.storyboard in Resources */,
+				556129EA21E14E6800ACC56C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,7 +364,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559C936D21E29D05008E6E17 /* ListViewModel.swift in Sources */,
+				559C936F21E29D19008E6E17 /* ControllerProtocol.swift in Sources */,
+				559C936321E298E0008E6E17 /* ListViewController.swift in Sources */,
 				554780D821E13265007F131C /* AppDelegate.swift in Sources */,
+				559C936B21E299E8008E6E17 /* BaseTableViewCellProtocol.swift in Sources */,
+				559C936821E29970008E6E17 /* ListTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -367,25 +403,6 @@
 			targetProxy = 554780F421E13266007F131C /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		554780DB21E13265007F131C /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				554780DC21E13265007F131C /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		554780E021E13266007F131C /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				554780E121E13266007F131C /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		554780FA21E13266007F131C /* Debug */ = {
