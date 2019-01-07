@@ -36,7 +36,7 @@ extension BaseService {
         }
     }
     
-    func handleResponseArray<T: APICodable>(response: Moya.Response, key: String?) throws -> [T] {
+    func handleResponseArray<T: APICodable>(response: Moya.Response, key: String? = nil) throws -> [T] {
         if response.statusCode == 200 {
             do {
                 let obj: [T] = try response.mapArray()

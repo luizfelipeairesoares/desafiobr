@@ -20,13 +20,4 @@ struct RoundEntity : APICodable {
         
     }
     
-//    static func decode(from json: [String : Any]) -> RoundEntity? {
-//        if let jsonData = try? JSONSerialization.data(withJSONObject: json, options: []) {
-//            if let decodedObject = try? JSONDecoder().decode(RoundEntity.self, from: jsonData) {
-//                return decodedObject
-//            }
-//        }
-//        return nil
-//    }
-    
 }

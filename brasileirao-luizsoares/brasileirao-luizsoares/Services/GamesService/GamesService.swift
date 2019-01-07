@@ -31,6 +31,20 @@ struct GamesService : BaseService {
         }
     }
     
-    //internal func requestGames(round: Int, completionHandler: @escaping ()
+    internal func requestGames(round: Int, completionHandler: @escaping (APIResult<[GameEntity], APIError>) -> Void) {
+        self.provider.request(.games(round: round)) { (result) in
+            switch result {
+            case .success(let response):
+                do {
+                    let obj: [GameEntity] = try self.handleResponseArray(response: response) as [GameEntity]
+                    completionHandler(APIResult.success(obj))
+                } catch {
+                    completionHandler(APIResult.failure(APIErrors.jsonMappingError.message()))
+                }
+            case .failure(let failure):
+                completionHandler(APIResult.failure(self.handleFailure(failure: failure)))
+            }
+        }
+    }
     
 }
