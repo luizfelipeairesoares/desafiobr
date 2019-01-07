@@ -28,7 +28,7 @@ public extension APICodable {
     
     public static func decode(_ json: NSArray) -> [Self]? {
         if let array = json as? [[String : Any]] {
-            return try? array.map { try self.decode($0)! }
+            return array.map { self.decode($0)! }
         }
         return nil
     }
