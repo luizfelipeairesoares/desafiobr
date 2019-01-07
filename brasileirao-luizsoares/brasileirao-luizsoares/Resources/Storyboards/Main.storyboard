@@ -27,16 +27,59 @@
             </objects>
             <point key="canvasLocation" x="-476" y="-13"/>
         </scene>
-        <!--List View Controller-->
+        <!--Brasileirão-->
         <scene sceneID="o6o-kb-5fM">
             <objects>
-                <viewController id="t7n-k1-ema" customClass="ListViewController" customModule="brasileirao_luizsoares" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Brasileirão" id="t7n-k1-ema" customClass="ListViewController" customModule="brasileirao_luizsoares" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="K6Z-rn-hjY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="gOZ-81-WkG">
+                                <rect key="frame" x="0.0" y="64" width="375" height="50"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZEb-qy-JTq"/>
+                                </constraints>
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="8" minimumInteritemSpacing="8" id="Wvm-aC-h8L">
+                                    <size key="itemSize" width="160" height="44"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="4" minY="3" maxX="4" maxY="3"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="RoundCollectionViewCellIdentifier" id="T4Q-7v-ksi" customClass="RoundCollectionViewCell" customModule="brasileirao_luizsoares" customModuleProvider="target">
+                                        <rect key="frame" x="4" y="3" width="160" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="160" height="44"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rodada 99" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ECA-qp-w0T">
+                                                    <rect key="frame" x="4" y="13" width="152" height="18"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                                    <color key="textColor" red="0.23137254900000001" green="0.61176470589999998" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="ECA-qp-w0T" secondAttribute="trailing" constant="4" id="LKq-uh-2iZ"/>
+                                            <constraint firstItem="ECA-qp-w0T" firstAttribute="leading" secondItem="T4Q-7v-ksi" secondAttribute="leading" constant="4" id="aOg-uA-BPQ"/>
+                                            <constraint firstItem="ECA-qp-w0T" firstAttribute="centerY" secondItem="T4Q-7v-ksi" secondAttribute="centerY" id="gtr-U4-Fzq"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="lblRound" destination="ECA-qp-w0T" id="0ob-YS-OUE"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="t7n-k1-ema" id="ajc-Um-rA6"/>
+                                    <outlet property="delegate" destination="t7n-k1-ema" id="NnS-Nj-6mn"/>
+                                </connections>
+                            </collectionView>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="88" estimatedRowHeight="88" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jBq-pm-f57">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="114" width="375" height="553"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ListTableViewCellIdentifier" id="g9c-zs-sSJ" customClass="ListTableViewCell" customModule="brasileirao_luizsoares" customModuleProvider="target">
@@ -208,15 +251,19 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="jBq-pm-f57" firstAttribute="top" secondItem="Q5E-h1-6Yd" secondAttribute="top" id="Jgl-Vx-7u1"/>
+                            <constraint firstItem="gOZ-81-WkG" firstAttribute="top" secondItem="Q5E-h1-6Yd" secondAttribute="top" id="KPE-kZ-tC1"/>
                             <constraint firstItem="jBq-pm-f57" firstAttribute="leading" secondItem="Q5E-h1-6Yd" secondAttribute="leading" id="SdK-Xx-YrS"/>
+                            <constraint firstItem="Q5E-h1-6Yd" firstAttribute="trailing" secondItem="gOZ-81-WkG" secondAttribute="trailing" id="ah9-mT-s39"/>
                             <constraint firstAttribute="bottom" secondItem="jBq-pm-f57" secondAttribute="bottom" id="dvd-6v-cS5"/>
                             <constraint firstItem="Q5E-h1-6Yd" firstAttribute="trailing" secondItem="jBq-pm-f57" secondAttribute="trailing" id="e9D-dj-KCk"/>
+                            <constraint firstItem="jBq-pm-f57" firstAttribute="top" secondItem="gOZ-81-WkG" secondAttribute="bottom" id="u1G-Jb-NKS"/>
+                            <constraint firstItem="gOZ-81-WkG" firstAttribute="leading" secondItem="Q5E-h1-6Yd" secondAttribute="leading" id="wZ1-yj-Vjb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Q5E-h1-6Yd"/>
                     </view>
                     <navigationItem key="navigationItem" id="Udu-IK-fhO"/>
                     <connections>
+                        <outlet property="collectionView" destination="gOZ-81-WkG" id="nye-xb-H0R"/>
                         <outlet property="tblView" destination="jBq-pm-f57" id="OgW-q0-RxT"/>
                     </connections>
                 </viewController>

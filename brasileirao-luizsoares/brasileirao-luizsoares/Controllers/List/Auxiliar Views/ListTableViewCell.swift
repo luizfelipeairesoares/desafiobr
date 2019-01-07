@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Kingfisher
 
 class ListTableViewCell: UITableViewCell {
     
@@ -38,12 +39,36 @@ class ListTableViewCell: UITableViewCell {
 extension ListTableViewCell : BaseTableViewCellProtocol {
     
     func configureCell(object: Any?) {
-        
-        self.lblDateTime.text = "SÁB 01/12/2018 MARACANÃ 19:00"
-        self.lblHomeTeam.text = "FLA"
-        self.lblHomeScore.text = "1"
-        self.lblAwayScore.text = "2"
-        self.lblAwayTeam.text = "CAP"
+        if let game = object as? GameEntity {
+            let home = game.teams["mandante"]
+            let away = game.teams["visitante"]
+            
+            let date: NSAttributedString = NSAttributedString(string: game.date.formatAPIDate()!,
+                                                              attributes: [NSAttributedString.Key.font  : UIFont.boldSystemFont(ofSize: 14.0),
+                                                                           NSAttributedString.Key.foregroundColor   : UIColor.black])
+            let local: NSAttributedString = NSAttributedString(string: game.local.name,
+                                                               attributes: [NSAttributedString.Key.font  : UIFont.systemFont(ofSize: 14.0),
+                                                                            NSAttributedString.Key.foregroundColor   : UIColor.darkGray])
+            let time: NSAttributedString = NSAttributedString(string: game.time,
+                                                              attributes: [NSAttributedString.Key.font  : UIFont.boldSystemFont(ofSize: 14.0),
+                                                                           NSAttributedString.Key.foregroundColor   : UIColor.black])
+            let dateTime = NSMutableAttributedString(string: "")
+            dateTime.append(date)
+            dateTime.append(NSAttributedString(string: "  "))
+            dateTime.append(local)
+            dateTime.append(NSAttributedString(string: "  "))
+            dateTime.append(time)
+            
+            self.lblDateTime.attributedText = dateTime
+            
+            self.lblHomeTeam.text = home?.initials
+            self.lblHomeScore.text = "\(game.homeScore)"
+            self.imgHomeTeam.kf.setImage(with: URL(string: home!.shieldURL)!, placeholder: UIImage(named: "shield"))
+            
+            self.lblAwayScore.text = "\(game.awayScore)"
+            self.lblAwayTeam.text = away?.initials
+            self.imgAwayTeam.kf.setImage(with: URL(string: away!.shieldURL)!, placeholder: UIImage(named: "shield"))
+        }
     }
     
 }

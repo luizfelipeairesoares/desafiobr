@@ -12,11 +12,34 @@ import NVActivityIndicatorView
 
 protocol ControllerProtocol : class {
     
+    func showLoading()
     func showError(errorMsg: String)
     
 }
 
 extension ControllerProtocol where Self : UIViewController {
+    
+    func showLoading() {
+        let filteredSubviews = self.view.subviews.filter({ $0 is NVActivityIndicatorView })
+        if filteredSubviews.count == 0 {
+            let activity = NVActivityIndicatorView(frame: CGRect(x: (self.view.center.x - 30),
+                                                                 y: (self.view.center.y - 30),
+                                                                 width: 60, height: 60),
+                                                   type: .ballPulse,
+                                                   color: UIColor(red: 59/255, green: 156/255, blue: 0, alpha: 1.0))
+            activity.startAnimating()
+            self.view.addSubview(activity)
+        }
+    }
+    
+    func hideLoading() {
+        for view in self.view.subviews {
+            if view is NVActivityIndicatorView {
+                view.removeFromSuperview()
+                break
+            }
+        }
+    }
     
     func showError(errorMsg: String) {
         let alert = UIAlertController(title: nil, message: errorMsg, preferredStyle: .alert)
