@@ -1,5 +1,6 @@
 PODS:
   - Alamofire (4.8.0)
+  - Kingfisher (5.0.1)
   - Moya (12.0.1):
     - Moya/Core (= 12.0.1)
   - Moya/Core (12.0.1):
@@ -8,25 +9,28 @@ PODS:
   - NVActivityIndicatorView (4.4.1):
     - NVActivityIndicatorView/Presenter (= 4.4.1)
   - NVActivityIndicatorView/Presenter (4.4.1)
-  - Result (4.0.0)
+  - Result (4.1.0)
 
 DEPENDENCIES:
+  - Kingfisher (~> 5.0.1)
   - Moya (~> 12.0)
   - NVActivityIndicatorView (~> 4.4.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - Alamofire
+    - Kingfisher
     - Moya
     - NVActivityIndicatorView
     - Result
 
 SPEC CHECKSUMS:
   Alamofire: 3ec537f71edc9804815215393ae2b1a8ea33a844
+  Kingfisher: 4f771421b9208185217550528a06fd48756cb7c2
   Moya: cf730b3cd9e005401ef37a85143aa141a12fd38f
   NVActivityIndicatorView: f0a6b0ed2973d9544da268f4eb76696f0a9577b0
-  Result: 7645bb3f50c2ce726dd0ff2fa7b6f42bbe6c3713
+  Result: bd966fac789cc6c1563440b348ab2598cc24d5c7
 
-PODFILE CHECKSUM: 77aecb589a52bf8579d3f25dec009459bbf56d40
+PODFILE CHECKSUM: 39a77f35d3e4945cbc09b573d91329bae217829d
 
 COCOAPODS: 1.5.3

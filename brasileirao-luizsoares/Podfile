@@ -8,6 +8,7 @@ target 'brasileirao-luizsoares' do
   # Pods for brasileirao-luizsoares
 
   pod 'Moya', '~> 12.0'
+  pod 'Kingfisher', '~> 5.0.1'
   pod 'NVActivityIndicatorView', '~> 4.4.1'
 
   target 'brasileirao-luizsoaresTests' do
