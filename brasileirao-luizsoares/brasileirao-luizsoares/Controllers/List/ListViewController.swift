@@ -26,6 +26,8 @@ class ListViewController: UIViewController {
         self.tblView.tableFooterView = UIView(frame: .zero)
         self.tblView.isHidden = true
         self.collectionView.isHidden = true
+        
+        self.title = "Lista"
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -75,7 +77,12 @@ extension ListViewController : UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        //let game = self.viewModel.games[indexPath.row]
+        
+        let game = self.viewModel.games[indexPath.row]
+        
+        let detail = self.storyboard?.instantiateViewController(withIdentifier: DetailViewController.storyboardID()) as! DetailViewController
+        detail.assignGame(game: game)
+        self.navigationController?.pushViewController(detail, animated: true)
     }
     
 }

@@ -15,6 +15,7 @@ public enum BrasileiraoAPI {
     
     case rounds
     case games(round: Int)
+    case gameplay(gameID: Int)
     
 }
 
@@ -30,6 +31,8 @@ extension BrasileiraoAPI : TargetType {
             return "rounds"
         case .games(let round):
             return "games/\(round)"
+        case .gameplay(let gameID):
+            return "gameplay/\(gameID)"
         }
     }
     

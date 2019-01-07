@@ -32,6 +32,10 @@
 		559C938F21E389DB008E6E17 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C938E21E389DB008E6E17 /* String.swift */; };
 		559C939321E3B19F008E6E17 /* BaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939221E3B19F008E6E17 /* BaseCollectionViewCell.swift */; };
 		559C939521E3B1D3008E6E17 /* RoundCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939421E3B1D3008E6E17 /* RoundCollectionViewCell.swift */; };
+		559C939721E3BB45008E6E17 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939621E3BB45008E6E17 /* DetailViewController.swift */; };
+		559C939A21E3BEEF008E6E17 /* PlayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939921E3BEEF008E6E17 /* PlayTableViewCell.swift */; };
+		559C939D21E3DB90008E6E17 /* GameplayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939C21E3DB90008E6E17 /* GameplayEntity.swift */; };
+		559C939F21E3DE2D008E6E17 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939E21E3DE2D008E6E17 /* DetailViewModel.swift */; };
 		8183772BEF34287C6B7B1F97 /* Pods_brasileirao_luizsoaresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */; };
 		827C726ADDE610ABABB0B50B /* Pods_brasileirao_luizsoares.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5141101792455B836E1D2F2 /* Pods_brasileirao_luizsoares.framework */; };
 		FA21CAE7BBCD45A6623B7B39 /* Pods_brasileirao_luizsoaresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321251B9D2E93C3CCD2C852B /* Pods_brasileirao_luizsoaresUITests.framework */; };
@@ -89,6 +93,10 @@
 		559C938E21E389DB008E6E17 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		559C939221E3B19F008E6E17 /* BaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewCell.swift; sourceTree = "<group>"; };
 		559C939421E3B1D3008E6E17 /* RoundCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundCollectionViewCell.swift; sourceTree = "<group>"; };
+		559C939621E3BB45008E6E17 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		559C939921E3BEEF008E6E17 /* PlayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTableViewCell.swift; sourceTree = "<group>"; };
+		559C939C21E3DB90008E6E17 /* GameplayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayEntity.swift; sourceTree = "<group>"; };
+		559C939E21E3DE2D008E6E17 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		59120D26E63F7F09E420B3A5 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresUITests/Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoaresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		725C637D6307747111B4A52D /* Pods-brasileirao-luizsoaresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresTests/Pods-brasileirao-luizsoaresTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -246,6 +254,9 @@
 		5547810C21E132BF007F131C /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				559C939821E3BEC7008E6E17 /* Auxiliar Views */,
+				559C939621E3BB45008E6E17 /* DetailViewController.swift */,
+				559C939E21E3DE2D008E6E17 /* DetailViewModel.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -308,6 +319,7 @@
 		559C937A21E2AEEA008E6E17 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				559C939B21E3DB85008E6E17 /* Gameplay */,
 				559C938A21E2C45A008E6E17 /* Game */,
 				559C938721E2C403008E6E17 /* Local */,
 				559C938421E2C380008E6E17 /* Team */,
@@ -354,6 +366,22 @@
 				559C938E21E389DB008E6E17 /* String.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		559C939821E3BEC7008E6E17 /* Auxiliar Views */ = {
+			isa = PBXGroup;
+			children = (
+				559C939921E3BEEF008E6E17 /* PlayTableViewCell.swift */,
+			);
+			path = "Auxiliar Views";
+			sourceTree = "<group>";
+		};
+		559C939B21E3DB85008E6E17 /* Gameplay */ = {
+			isa = PBXGroup;
+			children = (
+				559C939C21E3DB90008E6E17 /* GameplayEntity.swift */,
+			);
+			path = Gameplay;
 			sourceTree = "<group>";
 		};
 		C594FE7196998A82D05DE534 /* Frameworks */ = {
@@ -616,9 +644,12 @@
 				559C938621E2C38C008E6E17 /* TeamEntity.swift in Sources */,
 				559C936D21E29D05008E6E17 /* ListViewModel.swift in Sources */,
 				559C937921E2AE74008E6E17 /* APIResult.swift in Sources */,
+				559C939A21E3BEEF008E6E17 /* PlayTableViewCell.swift in Sources */,
 				559C938C21E2C464008E6E17 /* GameEntity.swift in Sources */,
 				559C936F21E29D19008E6E17 /* ControllerProtocol.swift in Sources */,
 				559C939321E3B19F008E6E17 /* BaseCollectionViewCell.swift in Sources */,
+				559C939F21E3DE2D008E6E17 /* DetailViewModel.swift in Sources */,
+				559C939721E3BB45008E6E17 /* DetailViewController.swift in Sources */,
 				559C938921E2C41B008E6E17 /* LocalEntity.swift in Sources */,
 				559C937D21E2AEFF008E6E17 /* RoundEntity.swift in Sources */,
 				559C936321E298E0008E6E17 /* ListViewController.swift in Sources */,
@@ -627,6 +658,7 @@
 				559C937621E2ADDB008E6E17 /* GamesService.swift in Sources */,
 				554780D821E13265007F131C /* AppDelegate.swift in Sources */,
 				559C938F21E389DB008E6E17 /* String.swift in Sources */,
+				559C939D21E3DB90008E6E17 /* GameplayEntity.swift in Sources */,
 				559C937121E2AC3C008E6E17 /* BaseService.swift in Sources */,
 				559C939521E3B1D3008E6E17 /* RoundCollectionViewCell.swift in Sources */,
 				559C938121E2B361008E6E17 /* APICodable.swift in Sources */,

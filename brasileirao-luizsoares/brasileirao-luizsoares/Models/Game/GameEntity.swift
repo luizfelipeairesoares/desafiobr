@@ -10,6 +10,7 @@ import Foundation
 
 struct GameEntity: APICodable {
     
+    let gameID:             Int
     let date:               String
     let time:               String
     let homeScore:          Int
@@ -20,6 +21,7 @@ struct GameEntity: APICodable {
     let local:              LocalEntity
     
     enum CodingKeys: String, CodingKey {
+        case gameID             = "id"
         case date               = "data_realizacao"
         case time               = "hora_realizacao"
         case homeScore          = "placar_oficial_mandante"
