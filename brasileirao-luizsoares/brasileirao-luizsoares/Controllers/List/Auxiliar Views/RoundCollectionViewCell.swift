@@ -17,7 +17,7 @@ class RoundCollectionViewCell: UICollectionViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        self.layer.borderColor = UIColor(red: 59/255, green: 156/255, blue: 0, alpha: 1.0).cgColor
+        self.layer.borderColor = BrasileiraoUtils.Colors.green.color().cgColor
         self.layer.borderWidth = 1
         self.layer.cornerRadius = 5
         self.layer.masksToBounds = true

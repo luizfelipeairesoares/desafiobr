@@ -26,7 +26,7 @@ extension ControllerProtocol where Self : UIViewController {
                                                                  y: (self.view.center.y - 30),
                                                                  width: 60, height: 60),
                                                    type: .ballPulse,
-                                                   color: UIColor(red: 59/255, green: 156/255, blue: 0, alpha: 1.0))
+                                                   color: BrasileiraoUtils.Colors.green.color())
             activity.startAnimating()
             self.view.addSubview(activity)
         }

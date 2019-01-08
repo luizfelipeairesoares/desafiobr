@@ -17,6 +17,8 @@ class ListViewController: UIViewController {
     
     fileprivate var viewModel: ListViewModel = ListViewModel()
     
+    fileprivate let refreshControl = UIRefreshControl()
+    
     // MARK: - View Lifecycle
 
     override func viewDidLoad() {
@@ -26,6 +28,11 @@ class ListViewController: UIViewController {
         self.tblView.tableFooterView = UIView(frame: .zero)
         self.tblView.isHidden = true
         self.collectionView.isHidden = true
+        
+        self.refreshControl.attributedTitle = NSAttributedString(string: "Atualizando...",
+                                                                 attributes: [NSAttributedString.Key.foregroundColor : BrasileiraoUtils.Colors.green.color()])
+        self.refreshControl.addTarget(self, action: #selector(self.refresh(_:)), for: .valueChanged)
+        self.tblView.addSubview(self.refreshControl)
         
         self.title = "Lista"
     }
@@ -38,6 +45,11 @@ class ListViewController: UIViewController {
         self.viewModel.loadRounds()
     }
     
+    // MARK: - Actions
+    
+    @objc func refresh(_ sender: UIRefreshControl) {
+        self.viewModel.loadGames(round: self.viewModel.selectedRound)
+    }
 
     /*
     // MARK: - Navigation
@@ -143,6 +155,7 @@ extension ListViewController : ListProtocol {
     }
     
     func reloadTable() {
+        self.refreshControl.endRefreshing()
         self.tblView.reloadData()
         self.tblView.isHidden = false
         self.hideLoading()

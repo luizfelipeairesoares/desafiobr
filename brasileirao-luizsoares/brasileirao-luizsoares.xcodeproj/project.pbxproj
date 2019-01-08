@@ -36,6 +36,7 @@
 		559C939A21E3BEEF008E6E17 /* PlayTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939921E3BEEF008E6E17 /* PlayTableViewCell.swift */; };
 		559C939D21E3DB90008E6E17 /* GameplayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939C21E3DB90008E6E17 /* GameplayEntity.swift */; };
 		559C939F21E3DE2D008E6E17 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939E21E3DE2D008E6E17 /* DetailViewModel.swift */; };
+		559C93A121E43363008E6E17 /* BrasileiraoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93A021E43363008E6E17 /* BrasileiraoUtils.swift */; };
 		8183772BEF34287C6B7B1F97 /* Pods_brasileirao_luizsoaresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */; };
 		827C726ADDE610ABABB0B50B /* Pods_brasileirao_luizsoares.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5141101792455B836E1D2F2 /* Pods_brasileirao_luizsoares.framework */; };
 		FA21CAE7BBCD45A6623B7B39 /* Pods_brasileirao_luizsoaresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321251B9D2E93C3CCD2C852B /* Pods_brasileirao_luizsoaresUITests.framework */; };
@@ -97,6 +98,7 @@
 		559C939921E3BEEF008E6E17 /* PlayTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayTableViewCell.swift; sourceTree = "<group>"; };
 		559C939C21E3DB90008E6E17 /* GameplayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayEntity.swift; sourceTree = "<group>"; };
 		559C939E21E3DE2D008E6E17 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		559C93A021E43363008E6E17 /* BrasileiraoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoUtils.swift; sourceTree = "<group>"; };
 		59120D26E63F7F09E420B3A5 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresUITests/Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoaresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		725C637D6307747111B4A52D /* Pods-brasileirao-luizsoaresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresTests/Pods-brasileirao-luizsoaresTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -237,6 +239,7 @@
 			children = (
 				559C938D21E389D1008E6E17 /* Extensions */,
 				559C936921E299D7008E6E17 /* Protocols */,
+				559C93A021E43363008E6E17 /* BrasileiraoUtils.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				559C937621E2ADDB008E6E17 /* GamesService.swift in Sources */,
 				554780D821E13265007F131C /* AppDelegate.swift in Sources */,
 				559C938F21E389DB008E6E17 /* String.swift in Sources */,
+				559C93A121E43363008E6E17 /* BrasileiraoUtils.swift in Sources */,
 				559C939D21E3DB90008E6E17 /* GameplayEntity.swift in Sources */,
 				559C937121E2AC3C008E6E17 /* BaseService.swift in Sources */,
 				559C939521E3B1D3008E6E17 /* RoundCollectionViewCell.swift in Sources */,
