@@ -1,0 +1,30 @@
+{
+    "data_realizacao": "2018-12-01T19:00",
+    "equipes": {
+        "mandante": {
+            "escudo": "https://s.glbimg.com/es/sde/f/equipes/2014/04/14/flamengo_60x60.png",
+            "id": 262,
+            "nome_popular": "Flamengo",
+            "sigla": "FLA"
+        },
+        "visitante": {
+            "escudo": "https://s.glbimg.com/es/sde/f/equipes/2015/06/24/atletico-pr_2015_65.png",
+            "id": 293,
+            "nome_popular": "Athletico-PR",
+            "sigla": "CAP"
+        }
+    },
+    "hora_realizacao": "19:00",
+    "id": 221544,
+    "placar_oficial_mandante": 1,
+    "placar_oficial_visitante": 2,
+    "placar_penaltis_mandante": null,
+    "placar_penaltis_visitante": null,
+    "sede": {
+        "nome_popular": "Maracan\u00e3"
+    },
+    "transmissao": {
+        "label": "veja como foi",
+        "url": "https:\/\/globoesporte.globo.com\/rj\/futebol\/brasileirao-serie-a\/jogo\/01-12-2018\/flamengo-atletico-pr.ghtml"
+    }
+}

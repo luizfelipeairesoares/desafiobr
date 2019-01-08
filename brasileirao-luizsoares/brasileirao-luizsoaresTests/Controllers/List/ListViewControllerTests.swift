@@ -13,6 +13,7 @@ import XCTest
 class ListViewControllerTests: XCTestCase {
     
     var controller: ListViewController!
+    var viewmodel: ListViewModel!
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -25,9 +26,11 @@ class ListViewControllerTests: XCTestCase {
         
         self.controller = navController!.topViewController as! ListViewController
         
-        self.controller.loadViewIfNeeded()
-        
         XCTAssertNotNil(self.controller as? ListProtocol)
+        
+        self.viewmodel = ListViewModel()
+        
+        self.viewmodel.assignController(controller: self.controller)
     }
 
     override func tearDown() {
@@ -39,6 +42,8 @@ class ListViewControllerTests: XCTestCase {
     func testOutlets() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        self.controller.loadViewIfNeeded()
+        
         XCTAssertNotNil(self.controller.collectionView)
         XCTAssertNotNil(self.controller.collectionView.delegate)
         XCTAssertNotNil(self.controller.collectionView.dataSource)
@@ -53,42 +58,64 @@ class ListViewControllerTests: XCTestCase {
         
         let tblCell = self.controller.tblView.dequeueReusableCell(withIdentifier: ListTableViewCell.cellIdentifier())
         XCTAssertNotNil(tblCell, "Table should dequeue reusable cell")
-        
-//        for subview in self.controller.tblView.subviews {
-//            if subview is UIRefreshControl {
-//                XCTAssert(subview is UIRefreshControl)
-//            }
-//        }
-//        XCTAssertNil("Missing UIRefreshControl")
     }
 
     func testRoundRequestSuccess() {
-//        self.viewmodel.assignController(controller: self.controller)
-//        sleep(15)
-        var round = RoundEntity()
-        round.current = 38
-        round.total = 38
+//        self.viewmodel.loadRounds()
+//        
+//        let predicate = NSPredicate(format: "self.controller.collectioView.isHidden == false")
+//        
+//        let expectation = self.expectation(for: predicate, evaluatedWith: self.controller.collectionView, handler: nil)
+//        
+//        let result = XCTWaiter().wait(for: [expectation], timeout: 10)
+//        
+//        switch result {
+//        case .timedOut:
+//            XCTAssertNotNil(self.viewmodel.round)
+//            XCTAssertTrue(self.controller.collectionView.numberOfItems(inSection: 0) == self.viewmodel.round!.total)
+//            let cell = self.controller.collectionView.dataSource?.collectionView(self.controller.collectionView, cellForItemAt: IndexPath(row: 0, section: 0))
+//            XCTAssertTrue(cell is RoundCollectionViewCell)
+//            break
+//        default:
+//            XCTAssertTrue(false)
+//            break
+//        }
+//        var round = RoundEntity()
+//        round.current = 38
+//        round.total = 38
         
-        self.controller.viewModel.round = round
-        self.controller.viewModel.selectedRound = round.current
+//        self.controller.viewModel.round = round
+//        self.controller.viewModel.selectedRound = round.current
         
-        XCTAssertNotNil(self.controller.viewModel.round)
+//        XCTAssertNotNil(self.controller.viewModel.round)
         
-        self.controller.reloadCollection()
+//        self.controller.reloadCollection()
         
-        XCTAssertTrue(self.controller.collectionView.numberOfItems(inSection: 0) == self.controller.viewModel.round!.total)
-        let cell = self.controller.collectionView.dataSource?.collectionView(self.controller.collectionView, cellForItemAt: IndexPath(row: 0, section: 0))
-        XCTAssertTrue(cell is RoundCollectionViewCell)
-        XCTAssertFalse(self.controller.collectionView.isHidden)
+//        XCTAssertTrue(self.controller.collectionView.numberOfItems(inSection: 0) == self.controller.viewModel.round!.total)
+//        let cell = self.controller.collectionView.dataSource?.collectionView(self.controller.collectionView, cellForItemAt: IndexPath(row: 0, section: 0))
+//        XCTAssertTrue(cell is RoundCollectionViewCell)
+//        XCTAssertFalse(self.controller.collectionView.isHidden)
     }
     
     func testRequestGamesSuccess() {
-//        self.viewmodel.loadGames(round: 1)
-//        sleep(15)
-//        XCTAssertTrue(self.viewmodel.games.count > 0)
-//        XCTAssertTrue(self.controller.tblView.numberOfRows(inSection: 0) == self.viewmodel.games.count)
-//        XCTAssertTrue(self.controller.tblView.cellForRow(at: IndexPath(row: 0, section: 0)) is ListTableViewCell)
-//        XCTAssertFalse(self.controller.tblView.isHidden)
+//        self.viewmodel.loadGames(round: 38)
+//        
+//        let predicate = NSPredicate(format: "self.controller.tblView.isHidden == false")
+//        
+//        let expectation = self.expectation(for: predicate, evaluatedWith: self.controller.tblView, handler: nil)
+//        
+//        let result = XCTWaiter().wait(for: [expectation], timeout: 10)
+//        
+//        switch result {
+//        case .timedOut:
+//            XCTAssertTrue(self.controller.tblView.numberOfRows(inSection: 0) == self.viewmodel.games.count)
+//            let cell = self.controller.tblView.dataSource?.tableView(self.controller.tblView, cellForRowAt: IndexPath(row: 0, section: 0))
+//            XCTAssertTrue(cell is ListTableViewCell)
+//            break
+//        default:
+//            XCTAssertTrue(false)
+//            break
+//        }
     }
 
 }

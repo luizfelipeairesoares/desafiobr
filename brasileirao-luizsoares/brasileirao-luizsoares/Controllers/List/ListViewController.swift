@@ -15,7 +15,7 @@ class ListViewController: UIViewController {
     @IBOutlet weak var tblView: UITableView!
     @IBOutlet weak var collectionView: UICollectionView!
     
-    internal var viewModel: ListViewModel = ListViewModel()
+    fileprivate var viewModel: ListViewModel = ListViewModel()
     
     fileprivate let refreshControl = UIRefreshControl()
     

@@ -57,6 +57,10 @@
 		55FED40721E4FABC00CE31C7 /* GameplayEntityTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED40621E4FABC00CE31C7 /* GameplayEntityTests.swift */; };
 		55FED40A21E4FB5600CE31C7 /* GamesServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED40921E4FB5600CE31C7 /* GamesServiceTests.swift */; };
 		55FED40D21E50E8200CE31C7 /* ListViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED40C21E50E8200CE31C7 /* ListViewControllerTests.swift */; };
+		55FED40F21E5227B00CE31C7 /* ListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED40E21E5227B00CE31C7 /* ListViewModelTests.swift */; };
+		55FED41121E537AA00CE31C7 /* DetailViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED41021E537AA00CE31C7 /* DetailViewControllerTests.swift */; };
+		55FED41321E539C800CE31C7 /* DetailViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED41221E539C800CE31C7 /* DetailViewModelTests.swift */; };
+		55FED41921E53EB000CE31C7 /* GameMock.json in Resources */ = {isa = PBXBuildFile; fileRef = 55FED41821E53EB000CE31C7 /* GameMock.json */; };
 		8183772BEF34287C6B7B1F97 /* Pods_brasileirao_luizsoaresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */; };
 		827C726ADDE610ABABB0B50B /* Pods_brasileirao_luizsoares.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5141101792455B836E1D2F2 /* Pods_brasileirao_luizsoares.framework */; };
 		FA21CAE7BBCD45A6623B7B39 /* Pods_brasileirao_luizsoaresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321251B9D2E93C3CCD2C852B /* Pods_brasileirao_luizsoaresUITests.framework */; };
@@ -139,6 +143,10 @@
 		55FED40621E4FABC00CE31C7 /* GameplayEntityTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayEntityTests.swift; sourceTree = "<group>"; };
 		55FED40921E4FB5600CE31C7 /* GamesServiceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GamesServiceTests.swift; sourceTree = "<group>"; };
 		55FED40C21E50E8200CE31C7 /* ListViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewControllerTests.swift; sourceTree = "<group>"; };
+		55FED40E21E5227B00CE31C7 /* ListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewModelTests.swift; sourceTree = "<group>"; };
+		55FED41021E537AA00CE31C7 /* DetailViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewControllerTests.swift; sourceTree = "<group>"; };
+		55FED41221E539C800CE31C7 /* DetailViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModelTests.swift; sourceTree = "<group>"; };
+		55FED41821E53EB000CE31C7 /* GameMock.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = GameMock.json; sourceTree = "<group>"; };
 		59120D26E63F7F09E420B3A5 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresUITests/Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoaresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		725C637D6307747111B4A52D /* Pods-brasileirao-luizsoaresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresTests/Pods-brasileirao-luizsoaresTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +227,7 @@
 				55FED3F921E4F8B400CE31C7 /* Views */,
 				55FED3FA21E4F8BB00CE31C7 /* Models */,
 				55FED3FB21E4F8C200CE31C7 /* Services */,
+				55FED41421E53CB100CE31C7 /* SupportingFiles */,
 				554780EE21E13266007F131C /* Info.plist */,
 			);
 			path = "brasileirao-luizsoaresTests";
@@ -261,6 +270,7 @@
 		5547810821E1328A007F131C /* SupportingFiles */ = {
 			isa = PBXGroup;
 			children = (
+				55FED41721E53E8D00CE31C7 /* Mocks */,
 				554780E321E13266007F131C /* Info.plist */,
 				559C93A521E4366E008E6E17 /* BrasileiraoDB.xcdatamodeld */,
 			);
@@ -466,6 +476,7 @@
 			isa = PBXGroup;
 			children = (
 				55FED40C21E50E8200CE31C7 /* ListViewControllerTests.swift */,
+				55FED40E21E5227B00CE31C7 /* ListViewModelTests.swift */,
 			);
 			path = List;
 			sourceTree = "<group>";
@@ -473,6 +484,8 @@
 		55FED3F821E4F8A400CE31C7 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				55FED41021E537AA00CE31C7 /* DetailViewControllerTests.swift */,
+				55FED41221E539C800CE31C7 /* DetailViewModelTests.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -541,6 +554,21 @@
 				55FED40921E4FB5600CE31C7 /* GamesServiceTests.swift */,
 			);
 			path = GamesService;
+			sourceTree = "<group>";
+		};
+		55FED41421E53CB100CE31C7 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		55FED41721E53E8D00CE31C7 /* Mocks */ = {
+			isa = PBXGroup;
+			children = (
+				55FED41821E53EB000CE31C7 /* GameMock.json */,
+			);
+			path = Mocks;
 			sourceTree = "<group>";
 		};
 		C594FE7196998A82D05DE534 /* Frameworks */ = {
@@ -678,6 +706,7 @@
 				559C93B821E43C02008E6E17 /* BrasileiraoDB.xcdatamodeld in Resources */,
 				556129EB21E14E6800ACC56C /* LaunchScreen.storyboard in Resources */,
 				554780DF21E13266007F131C /* Assets.xcassets in Resources */,
+				55FED41921E53EB000CE31C7 /* GameMock.json in Resources */,
 				556129EA21E14E6800ACC56C /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -850,10 +879,13 @@
 			files = (
 				55FED40D21E50E8200CE31C7 /* ListViewControllerTests.swift in Sources */,
 				55FED40A21E4FB5600CE31C7 /* GamesServiceTests.swift in Sources */,
+				55FED40F21E5227B00CE31C7 /* ListViewModelTests.swift in Sources */,
 				55FED40721E4FABC00CE31C7 /* GameplayEntityTests.swift in Sources */,
 				55FED40121E4FA2600CE31C7 /* LocalEntityTests.swift in Sources */,
+				55FED41321E539C800CE31C7 /* DetailViewModelTests.swift in Sources */,
 				55FED3FE21E4F9B000CE31C7 /* RoundEntityTests.swift in Sources */,
 				55FED40421E4FA7C00CE31C7 /* GameEntityTests.swift in Sources */,
+				55FED41121E537AA00CE31C7 /* DetailViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
