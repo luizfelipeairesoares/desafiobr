@@ -20,7 +20,9 @@ class LocalConverter {
     }
     
     class func convertToCoreData(entity: LocalEntity) -> LocalCoreDataEntity {
-        let coredata = LocalCoreDataEntity()
+        let persistence = PersistenceManager.sharedInstance
+        
+        let coredata = LocalCoreDataEntity(context: persistence.context)
         coredata.local = entity.name
         return coredata
     }

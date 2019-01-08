@@ -11,12 +11,15 @@ import Foundation
 enum APIErrors: Error {
     
     case jsonMappingError
+    case networkUnreachable
     case undefined(description: String)
     
     func message() -> APIError {
         switch self {
         case .jsonMappingError:
             return ["code" : "-1", "message" : "Não foi possível mapear o JSON"]
+        case .networkUnreachable:
+            return ["code" : "-1", "message" : "Por favor, verifique sua conexão com internet"]
         case .undefined(let description):
             return ["code" : "-1", "message" : description]
         }

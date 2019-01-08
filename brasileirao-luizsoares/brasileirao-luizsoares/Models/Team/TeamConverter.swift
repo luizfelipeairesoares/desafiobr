@@ -22,7 +22,9 @@ class TeamConverter {
     }
     
     class func convertToCoreDataEntity(entity: TeamEntity) -> TeamCoreDataEntity {
-        let coredata = TeamCoreDataEntity()
+        let persistence = PersistenceManager.sharedInstance
+        
+        let coredata = TeamCoreDataEntity(context: persistence.context)
         coredata.shieldURL  = entity.shieldURL
         coredata.fullName   = entity.fullName
         coredata.initials   = entity.initials

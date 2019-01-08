@@ -47,6 +47,11 @@
 		559C93C021E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93BE21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift */; };
 		559C93C221E43E0C008E6E17 /* LocalConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93C121E43E0C008E6E17 /* LocalConverter.swift */; };
 		559C93C421E43F0D008E6E17 /* TeamConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93C321E43F0D008E6E17 /* TeamConverter.swift */; };
+		55FED3ED21E4DDF700CE31C7 /* GameConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED3EC21E4DDF700CE31C7 /* GameConverter.swift */; };
+		55FED3F021E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED3EE21E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataClass.swift */; };
+		55FED3F121E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED3EF21E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataProperties.swift */; };
+		55FED3F321E4E60A00CE31C7 /* RoundConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED3F221E4E60A00CE31C7 /* RoundConverter.swift */; };
+		55FED3F521E4EB2D00CE31C7 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55FED3F421E4EB2D00CE31C7 /* Reachability.swift */; };
 		8183772BEF34287C6B7B1F97 /* Pods_brasileirao_luizsoaresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */; };
 		827C726ADDE610ABABB0B50B /* Pods_brasileirao_luizsoares.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5141101792455B836E1D2F2 /* Pods_brasileirao_luizsoares.framework */; };
 		FA21CAE7BBCD45A6623B7B39 /* Pods_brasileirao_luizsoaresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321251B9D2E93C3CCD2C852B /* Pods_brasileirao_luizsoaresUITests.framework */; };
@@ -119,6 +124,11 @@
 		559C93BE21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TeamCoreDataEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		559C93C121E43E0C008E6E17 /* LocalConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConverter.swift; sourceTree = "<group>"; };
 		559C93C321E43F0D008E6E17 /* TeamConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamConverter.swift; sourceTree = "<group>"; };
+		55FED3EC21E4DDF700CE31C7 /* GameConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameConverter.swift; sourceTree = "<group>"; };
+		55FED3EE21E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RoundCoreDataEntity+CoreDataClass.swift"; path = "/Desenvolvimento/workspaces/luiz-soares/brasileirao-luizsoares/brasileirao-luizsoares/Models/Round/RoundCoreDataEntity+CoreDataClass.swift"; sourceTree = "<absolute>"; };
+		55FED3EF21E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "RoundCoreDataEntity+CoreDataProperties.swift"; path = "/Desenvolvimento/workspaces/luiz-soares/brasileirao-luizsoares/brasileirao-luizsoares/Models/Round/RoundCoreDataEntity+CoreDataProperties.swift"; sourceTree = "<absolute>"; };
+		55FED3F221E4E60A00CE31C7 /* RoundConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundConverter.swift; sourceTree = "<group>"; };
+		55FED3F421E4EB2D00CE31C7 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		59120D26E63F7F09E420B3A5 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresUITests/Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoaresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		725C637D6307747111B4A52D /* Pods-brasileirao-luizsoaresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresTests/Pods-brasileirao-luizsoaresTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -337,6 +347,7 @@
 				559C937821E2AE74008E6E17 /* APIResult.swift */,
 				559C937E21E2B1E2008E6E17 /* APIErrors.swift */,
 				559C938221E2B5F6008E6E17 /* Response.swift */,
+				55FED3F421E4EB2D00CE31C7 /* Reachability.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -357,6 +368,9 @@
 			isa = PBXGroup;
 			children = (
 				559C937C21E2AEFF008E6E17 /* RoundEntity.swift */,
+				55FED3EE21E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataClass.swift */,
+				55FED3EF21E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataProperties.swift */,
+				55FED3F221E4E60A00CE31C7 /* RoundConverter.swift */,
 			);
 			path = Round;
 			sourceTree = "<group>";
@@ -389,6 +403,7 @@
 				559C93B921E43D89008E6E17 /* GameCoreDataEntity+CoreDataClass.swift */,
 				559C93BA21E43D89008E6E17 /* GameCoreDataEntity+CoreDataProperties.swift */,
 				559C938B21E2C464008E6E17 /* GameEntity.swift */,
+				55FED3EC21E4DDF700CE31C7 /* GameConverter.swift */,
 			);
 			path = Game;
 			sourceTree = "<group>";
@@ -694,6 +709,8 @@
 				559C93C021E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift in Sources */,
 				559C939F21E3DE2D008E6E17 /* DetailViewModel.swift in Sources */,
 				559C93C421E43F0D008E6E17 /* TeamConverter.swift in Sources */,
+				55FED3F321E4E60A00CE31C7 /* RoundConverter.swift in Sources */,
+				55FED3ED21E4DDF700CE31C7 /* GameConverter.swift in Sources */,
 				559C939721E3BB45008E6E17 /* DetailViewController.swift in Sources */,
 				559C93C221E43E0C008E6E17 /* LocalConverter.swift in Sources */,
 				559C938921E2C41B008E6E17 /* LocalEntity.swift in Sources */,
@@ -707,7 +724,9 @@
 				559C938F21E389DB008E6E17 /* String.swift in Sources */,
 				559C93A121E43363008E6E17 /* BrasileiraoUtils.swift in Sources */,
 				559C939D21E3DB90008E6E17 /* GameplayEntity.swift in Sources */,
+				55FED3F121E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataProperties.swift in Sources */,
 				559C937121E2AC3C008E6E17 /* BaseService.swift in Sources */,
+				55FED3F021E4E5F900CE31C7 /* RoundCoreDataEntity+CoreDataClass.swift in Sources */,
 				559C939521E3B1D3008E6E17 /* RoundCollectionViewCell.swift in Sources */,
 				559C93BC21E43D89008E6E17 /* GameCoreDataEntity+CoreDataProperties.swift in Sources */,
 				559C93B721E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataClass.swift in Sources */,
@@ -717,6 +736,7 @@
 				559C93BF21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataClass.swift in Sources */,
 				559C937321E2AC7C008E6E17 /* BrasileiraoAPI.swift in Sources */,
 				559C936821E29970008E6E17 /* ListTableViewCell.swift in Sources */,
+				55FED3F521E4EB2D00CE31C7 /* Reachability.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

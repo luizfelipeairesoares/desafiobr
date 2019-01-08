@@ -10,14 +10,19 @@ import Foundation
 
 struct RoundEntity : APICodable {
     
-    let total: Int
-    let current: Int
+    var total: Int
+    var current: Int
     
     enum CodingKeys: String, CodingKey {
         
         case total      = "rounds"
         case current    = "current"
         
+    }
+    
+    init() {
+        self.total = 0
+        self.current = 0
     }
     
 }

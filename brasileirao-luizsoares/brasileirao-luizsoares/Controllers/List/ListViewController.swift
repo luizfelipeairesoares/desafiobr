@@ -155,10 +155,10 @@ extension ListViewController : ListProtocol {
     }
     
     func reloadTable() {
+        self.hideLoading()
         self.refreshControl.endRefreshing()
         self.tblView.reloadData()
         self.tblView.isHidden = false
-        self.hideLoading()
     }
     
 }

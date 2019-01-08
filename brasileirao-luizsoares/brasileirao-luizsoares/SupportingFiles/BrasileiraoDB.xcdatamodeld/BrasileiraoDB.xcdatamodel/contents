@@ -15,14 +15,19 @@
     <entity name="LocalCoreDataEntity" representedClassName=".LocalCoreDataEntity" syncable="YES" codeGenerationType="class">
         <attribute name="local" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="RoundCoreDataEntity" representedClassName="RoundCoreDataEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="current" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="total" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+    </entity>
     <entity name="TeamCoreDataEntity" representedClassName=".TeamCoreDataEntity" syncable="YES" codeGenerationType="class">
         <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="initials" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="shieldURL" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
     <elements>
+        <element name="GameCoreDataEntity" positionX="-36" positionY="36" width="128" height="195"/>
         <element name="LocalCoreDataEntity" positionX="-63" positionY="-18" width="128" height="60"/>
         <element name="TeamCoreDataEntity" positionX="-54" positionY="0" width="128" height="90"/>
-        <element name="GameCoreDataEntity" positionX="-36" positionY="36" width="128" height="195"/>
+        <element name="RoundCoreDataEntity" positionX="-45" positionY="81" width="128" height="75"/>
     </elements>
 </model>

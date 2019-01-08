@@ -10,15 +10,15 @@ import Foundation
 
 struct GameEntity: APICodable {
     
-    let gameID:             Int
-    let date:               String
-    let time:               String
-    let homeScore:          Int
-    let awayScore:          Int
-    let homePenaltiesScore: Int?
-    let awayPenaltiesScore: Int?
-    let teams:              [String : TeamEntity]
-    let local:              LocalEntity
+    var gameID:             Int
+    var date:               String
+    var time:               String
+    var homeScore:          Int
+    var awayScore:          Int
+    var homePenaltiesScore: Int?
+    var awayPenaltiesScore: Int?
+    var teams:              [String : TeamEntity]
+    var local:              LocalEntity
     
     enum CodingKeys: String, CodingKey {
         case gameID             = "id"
@@ -30,7 +30,18 @@ struct GameEntity: APICodable {
         case awayPenaltiesScore = "placar_penaltis_visitante"
         case teams              = "equipes"
         case local              = "sede"
-        
+    }
+    
+    init() {
+        self.gameID             = -1
+        self.date               = ""
+        self.time               = ""
+        self.homeScore          = -1
+        self.awayScore          = -1
+        self.homePenaltiesScore = -1
+        self.awayPenaltiesScore = -1
+        self.teams              = [:]
+        self.local              = LocalEntity()
     }
     
 }

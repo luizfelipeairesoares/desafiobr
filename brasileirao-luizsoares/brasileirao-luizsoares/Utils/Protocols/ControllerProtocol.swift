@@ -42,6 +42,7 @@ extension ControllerProtocol where Self : UIViewController {
     }
     
     func showError(errorMsg: String) {
+        self.hideLoading()
         let alert = UIAlertController(title: nil, message: errorMsg, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .cancel, handler: nil))
         self.present(alert, animated: true, completion: nil)
