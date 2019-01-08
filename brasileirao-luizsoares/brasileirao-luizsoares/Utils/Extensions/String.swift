@@ -18,4 +18,14 @@ extension String {
         return dateFormatter.string(from: date!)
     }
     
+    func convertGameplayMoment() -> String? {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "mm:ss"
+        if let date = dateFormatter.date(from: self) {
+            dateFormatter.dateFormat = "mm"
+            return dateFormatter.string(from: date)
+        }
+        return nil
+    }
+    
 }

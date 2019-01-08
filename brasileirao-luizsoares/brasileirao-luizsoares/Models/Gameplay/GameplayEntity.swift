@@ -8,6 +8,17 @@
 
 import Foundation
 
+enum PlayType: String, APICodable {
+    
+    case normal     = "NORMAL"
+    case sub        = "SUBSTITUICAO"
+    case yellow     = "CARTAO_AMARELO"
+    case red        = "CARTAO_VERMELHO"
+    case important  = "IMPORTANTE"
+    case goal       = "GOL"
+    
+}
+
 struct GameplayEntity: APICodable {
     
     let body:           GameplayBody
@@ -15,7 +26,7 @@ struct GameplayEntity: APICodable {
     let moment:         String
     let period:         String
     let periodLabel:    String
-    let playType:       String
+    let playType:       PlayType
     let title:          String
     
     enum CodingKeys: String, CodingKey {
