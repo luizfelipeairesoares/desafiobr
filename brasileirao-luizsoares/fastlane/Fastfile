@@ -1,0 +1,36 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:ios)
+
+platform :ios do
+
+  before_all do
+    ensure_git_status_clean
+    cocoapods
+  end
+
+  desc "Upload to testflight"
+  lane :upload_testflight do
+    sync_code_signing(type: "appstore")
+    build_app(scheme: "brasileirao-luizsoares",
+              workspace: "brasileirao-luizsoares.xcworkspace",
+              include_bitcode: true)
+    changelog_from_git_commits
+    upload_to_testflight(skip_waiting_for_build_processing: true)
+    #slack(message: "Uploaded to testflight")
+  end
+
+end
