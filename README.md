@@ -107,4 +107,4 @@ http://s.glbimg.com/es/sde/f/equipes/2014/04/14/santos_60x60.png
 
 ### Observações
   - Os dados foram retirados do globoesporte.com através de um inspect source.
-  - Utilizei o Apiary.io para um backend mockado. [git](https://github.com/luizfelipeairesoares/apidesafio)
+  - Utilizei o Apiary.io para um backend mockado. [Link para documentação](https://github.com/luizfelipeairesoares/apidesafio)
