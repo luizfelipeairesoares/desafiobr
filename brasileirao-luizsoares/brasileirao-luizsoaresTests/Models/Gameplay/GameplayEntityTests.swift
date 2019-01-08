@@ -1,15 +1,14 @@
 //
-//  brasileirao_luizsoaresTests.swift
+//  GameplayEntityTests.swift
 //  brasileirao-luizsoaresTests
 //
-//  Created by Luiz Felipe Aires Soares on 05/01/19.
+//  Created by Luiz Felipe Aires Soares on 08/01/19.
 //  Copyright © 2019 globo. All rights reserved.
 //
 
 import XCTest
-@testable import brasileirao_luizsoares
 
-class brasileirao_luizsoaresTests: XCTestCase {
+class GameplayEntityTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

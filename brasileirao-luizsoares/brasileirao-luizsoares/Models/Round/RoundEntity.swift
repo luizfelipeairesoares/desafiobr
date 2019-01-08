@@ -14,10 +14,8 @@ struct RoundEntity : APICodable {
     var current: Int
     
     enum CodingKeys: String, CodingKey {
-        
         case total      = "rounds"
         case current    = "current"
-        
     }
     
     init() {

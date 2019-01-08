@@ -45,7 +45,12 @@ extension BrasileiraoAPI : TargetType {
     }
     
     public var sampleData: Data {
-        return Data()
+        switch self {
+        case .rounds:
+            return "{\"rounds\" : 38, \"current\" : 38 }".data(using: .utf8)!
+        default:
+            return Data()
+        }
     }
     
     public var task: Task {
