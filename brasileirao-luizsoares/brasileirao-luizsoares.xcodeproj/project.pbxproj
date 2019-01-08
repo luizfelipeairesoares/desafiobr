@@ -37,6 +37,16 @@
 		559C939D21E3DB90008E6E17 /* GameplayEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939C21E3DB90008E6E17 /* GameplayEntity.swift */; };
 		559C939F21E3DE2D008E6E17 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C939E21E3DE2D008E6E17 /* DetailViewModel.swift */; };
 		559C93A121E43363008E6E17 /* BrasileiraoUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93A021E43363008E6E17 /* BrasileiraoUtils.swift */; };
+		559C93A421E434CA008E6E17 /* PersistenceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93A321E434CA008E6E17 /* PersistenceManager.swift */; };
+		559C93B621E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93B421E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataProperties.swift */; };
+		559C93B721E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93B521E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataClass.swift */; };
+		559C93B821E43C02008E6E17 /* BrasileiraoDB.xcdatamodeld in Resources */ = {isa = PBXBuildFile; fileRef = 559C93A521E4366E008E6E17 /* BrasileiraoDB.xcdatamodeld */; };
+		559C93BB21E43D89008E6E17 /* GameCoreDataEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93B921E43D89008E6E17 /* GameCoreDataEntity+CoreDataClass.swift */; };
+		559C93BC21E43D89008E6E17 /* GameCoreDataEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93BA21E43D89008E6E17 /* GameCoreDataEntity+CoreDataProperties.swift */; };
+		559C93BF21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93BD21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataClass.swift */; };
+		559C93C021E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93BE21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift */; };
+		559C93C221E43E0C008E6E17 /* LocalConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93C121E43E0C008E6E17 /* LocalConverter.swift */; };
+		559C93C421E43F0D008E6E17 /* TeamConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 559C93C321E43F0D008E6E17 /* TeamConverter.swift */; };
 		8183772BEF34287C6B7B1F97 /* Pods_brasileirao_luizsoaresTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */; };
 		827C726ADDE610ABABB0B50B /* Pods_brasileirao_luizsoares.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F5141101792455B836E1D2F2 /* Pods_brasileirao_luizsoares.framework */; };
 		FA21CAE7BBCD45A6623B7B39 /* Pods_brasileirao_luizsoaresUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 321251B9D2E93C3CCD2C852B /* Pods_brasileirao_luizsoaresUITests.framework */; };
@@ -99,6 +109,16 @@
 		559C939C21E3DB90008E6E17 /* GameplayEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameplayEntity.swift; sourceTree = "<group>"; };
 		559C939E21E3DE2D008E6E17 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		559C93A021E43363008E6E17 /* BrasileiraoUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BrasileiraoUtils.swift; sourceTree = "<group>"; };
+		559C93A321E434CA008E6E17 /* PersistenceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceManager.swift; sourceTree = "<group>"; };
+		559C93A621E4366E008E6E17 /* BrasileiraoDB.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = BrasileiraoDB.xcdatamodel; sourceTree = "<group>"; };
+		559C93B421E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalCoreDataEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		559C93B521E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LocalCoreDataEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		559C93B921E43D89008E6E17 /* GameCoreDataEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameCoreDataEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		559C93BA21E43D89008E6E17 /* GameCoreDataEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "GameCoreDataEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		559C93BD21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TeamCoreDataEntity+CoreDataClass.swift"; sourceTree = "<group>"; };
+		559C93BE21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "TeamCoreDataEntity+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		559C93C121E43E0C008E6E17 /* LocalConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalConverter.swift; sourceTree = "<group>"; };
+		559C93C321E43F0D008E6E17 /* TeamConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamConverter.swift; sourceTree = "<group>"; };
 		59120D26E63F7F09E420B3A5 /* Pods-brasileirao-luizsoaresUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresUITests/Pods-brasileirao-luizsoaresUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		5E0417B005D74F56E00E30EA /* Pods_brasileirao_luizsoaresTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_brasileirao_luizsoaresTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		725C637D6307747111B4A52D /* Pods-brasileirao-luizsoaresTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-brasileirao-luizsoaresTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-brasileirao-luizsoaresTests/Pods-brasileirao-luizsoaresTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -219,6 +239,7 @@
 			isa = PBXGroup;
 			children = (
 				554780E321E13266007F131C /* Info.plist */,
+				559C93A521E4366E008E6E17 /* BrasileiraoDB.xcdatamodeld */,
 			);
 			path = SupportingFiles;
 			sourceTree = "<group>";
@@ -226,8 +247,9 @@
 		5547810921E1329A007F131C /* Services */ = {
 			isa = PBXGroup;
 			children = (
-				559C937721E2AE5E008E6E17 /* Utils */,
+				559C93A221E434B4008E6E17 /* DatabasePersistence */,
 				559C937421E2ADD0008E6E17 /* GamesService */,
+				559C937721E2AE5E008E6E17 /* Utils */,
 				559C937021E2AC3C008E6E17 /* BaseService.swift */,
 				559C937221E2AC7C008E6E17 /* BrasileiraoAPI.swift */,
 			);
@@ -342,7 +364,10 @@
 		559C938421E2C380008E6E17 /* Team */ = {
 			isa = PBXGroup;
 			children = (
+				559C93BD21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataClass.swift */,
+				559C93BE21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift */,
 				559C938521E2C38C008E6E17 /* TeamEntity.swift */,
+				559C93C321E43F0D008E6E17 /* TeamConverter.swift */,
 			);
 			path = Team;
 			sourceTree = "<group>";
@@ -350,7 +375,10 @@
 		559C938721E2C403008E6E17 /* Local */ = {
 			isa = PBXGroup;
 			children = (
+				559C93B521E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataClass.swift */,
+				559C93B421E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataProperties.swift */,
 				559C938821E2C41B008E6E17 /* LocalEntity.swift */,
+				559C93C121E43E0C008E6E17 /* LocalConverter.swift */,
 			);
 			path = Local;
 			sourceTree = "<group>";
@@ -358,6 +386,8 @@
 		559C938A21E2C45A008E6E17 /* Game */ = {
 			isa = PBXGroup;
 			children = (
+				559C93B921E43D89008E6E17 /* GameCoreDataEntity+CoreDataClass.swift */,
+				559C93BA21E43D89008E6E17 /* GameCoreDataEntity+CoreDataProperties.swift */,
 				559C938B21E2C464008E6E17 /* GameEntity.swift */,
 			);
 			path = Game;
@@ -385,6 +415,14 @@
 				559C939C21E3DB90008E6E17 /* GameplayEntity.swift */,
 			);
 			path = Gameplay;
+			sourceTree = "<group>";
+		};
+		559C93A221E434B4008E6E17 /* DatabasePersistence */ = {
+			isa = PBXGroup;
+			children = (
+				559C93A321E434CA008E6E17 /* PersistenceManager.swift */,
+			);
+			path = DatabasePersistence;
 			sourceTree = "<group>";
 		};
 		C594FE7196998A82D05DE534 /* Frameworks */ = {
@@ -518,6 +556,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				559C93B821E43C02008E6E17 /* BrasileiraoDB.xcdatamodeld in Resources */,
 				556129EB21E14E6800ACC56C /* LaunchScreen.storyboard in Resources */,
 				554780DF21E13266007F131C /* Assets.xcassets in Resources */,
 				556129EA21E14E6800ACC56C /* Main.storyboard in Resources */,
@@ -649,12 +688,17 @@
 				559C937921E2AE74008E6E17 /* APIResult.swift in Sources */,
 				559C939A21E3BEEF008E6E17 /* PlayTableViewCell.swift in Sources */,
 				559C938C21E2C464008E6E17 /* GameEntity.swift in Sources */,
+				559C93A421E434CA008E6E17 /* PersistenceManager.swift in Sources */,
 				559C936F21E29D19008E6E17 /* ControllerProtocol.swift in Sources */,
 				559C939321E3B19F008E6E17 /* BaseCollectionViewCell.swift in Sources */,
+				559C93C021E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataProperties.swift in Sources */,
 				559C939F21E3DE2D008E6E17 /* DetailViewModel.swift in Sources */,
+				559C93C421E43F0D008E6E17 /* TeamConverter.swift in Sources */,
 				559C939721E3BB45008E6E17 /* DetailViewController.swift in Sources */,
+				559C93C221E43E0C008E6E17 /* LocalConverter.swift in Sources */,
 				559C938921E2C41B008E6E17 /* LocalEntity.swift in Sources */,
 				559C937D21E2AEFF008E6E17 /* RoundEntity.swift in Sources */,
+				559C93B621E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataProperties.swift in Sources */,
 				559C936321E298E0008E6E17 /* ListViewController.swift in Sources */,
 				559C937F21E2B1E2008E6E17 /* APIErrors.swift in Sources */,
 				559C938321E2B5F6008E6E17 /* Response.swift in Sources */,
@@ -665,8 +709,12 @@
 				559C939D21E3DB90008E6E17 /* GameplayEntity.swift in Sources */,
 				559C937121E2AC3C008E6E17 /* BaseService.swift in Sources */,
 				559C939521E3B1D3008E6E17 /* RoundCollectionViewCell.swift in Sources */,
+				559C93BC21E43D89008E6E17 /* GameCoreDataEntity+CoreDataProperties.swift in Sources */,
+				559C93B721E43B4D008E6E17 /* LocalCoreDataEntity+CoreDataClass.swift in Sources */,
 				559C938121E2B361008E6E17 /* APICodable.swift in Sources */,
+				559C93BB21E43D89008E6E17 /* GameCoreDataEntity+CoreDataClass.swift in Sources */,
 				559C936B21E299E8008E6E17 /* BaseTableViewCellProtocol.swift in Sources */,
+				559C93BF21E43D8F008E6E17 /* TeamCoreDataEntity+CoreDataClass.swift in Sources */,
 				559C937321E2AC7C008E6E17 /* BrasileiraoAPI.swift in Sources */,
 				559C936821E29970008E6E17 /* ListTableViewCell.swift in Sources */,
 			);
@@ -986,6 +1034,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		559C93A521E4366E008E6E17 /* BrasileiraoDB.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				559C93A621E4366E008E6E17 /* BrasileiraoDB.xcdatamodel */,
+			);
+			currentVersion = 559C93A621E4366E008E6E17 /* BrasileiraoDB.xcdatamodel */;
+			path = BrasileiraoDB.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 554780CC21E13265007F131C /* Project object */;
 }

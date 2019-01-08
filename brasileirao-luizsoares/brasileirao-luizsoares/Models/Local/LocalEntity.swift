@@ -10,10 +10,14 @@ import Foundation
 
 struct LocalEntity: APICodable {
     
-    let name:   String
+    var name:   String
     
     enum CodingKeys: String, CodingKey {
         case name   = "nome_popular"
+    }
+    
+    init() {
+        self.name = ""
     }
     
 }

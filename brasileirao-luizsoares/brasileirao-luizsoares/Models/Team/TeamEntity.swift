@@ -10,14 +10,20 @@ import Foundation
 
 struct TeamEntity: APICodable {
     
-    let shieldURL:      String
-    let fullName:       String
-    let initials:       String
+    var shieldURL:      String
+    var fullName:       String
+    var initials:       String
     
     enum CodingKeys: String, CodingKey {
         case shieldURL      = "escudo"
         case fullName       = "nome_popular"
         case initials       = "sigla"
+    }
+    
+    init() {
+        self.shieldURL = ""
+        self.fullName = ""
+        self.initials = ""
     }
     
 }

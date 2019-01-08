@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14460.32" systemVersion="18C54" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GameCoreDataEntity" representedClassName=".GameCoreDataEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="awayPenaltiesScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="awayScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="date" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="gameID" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="homePenaltiesScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="homeScore" optional="YES" attributeType="Integer 16" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="time" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="awayTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TeamCoreDataEntity" syncable="YES"/>
+        <relationship name="homeTeam" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="TeamCoreDataEntity" syncable="YES"/>
+        <relationship name="local" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="LocalCoreDataEntity" syncable="YES"/>
+    </entity>
+    <entity name="LocalCoreDataEntity" representedClassName=".LocalCoreDataEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="local" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="TeamCoreDataEntity" representedClassName=".TeamCoreDataEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="fullName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="initials" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="shieldURL" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="LocalCoreDataEntity" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="TeamCoreDataEntity" positionX="-54" positionY="0" width="128" height="90"/>
+        <element name="GameCoreDataEntity" positionX="-36" positionY="36" width="128" height="195"/>
+    </elements>
+</model>
