@@ -92,3 +92,19 @@ http://s.glbimg.com/es/sde/f/equipes/2014/04/14/goias_60x60.png
 http://s.glbimg.com/es/sde/f/equipes/2015/05/05/fluminense-escudo-65x65.png
 http://s.glbimg.com/es/sde/f/equipes/2014/04/14/santos_60x60.png
 ```
+
+## Considerações do desenvolvedor
+
+### Decisões tomadas
+  - Arquitetura MVVM com protocolos: Acredito que seja uma forma simples de entender o código e manter no futuro. Cumpre sua função de
+  segregação de responsabilidades, concentrando as regras de negócio no view model.
+  - Microserviços
+  - Utilização do Moya para simplificar a API num enum. Em seu core ele utiliza o Alamofire para as requisições.
+
+### Ideias que gostaria de implementar
+  - Melhores testes para maior code coverage
+  - Talvez segregar as responsabilidades em mais objetos. Mas acredito que poderia acarretar numa maior complexidade para o projeto.
+
+### Observações
+  - Os dados foram retirados do globoesporte.com através de um inspect source.
+  - Utilizei o Apiary.io para um backend mockado. [git](https://github.com/luizfelipeairesoares/apidesafio)
